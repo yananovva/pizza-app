@@ -34,6 +34,14 @@
     color: var(--text-color);
 }
 
+.link:hover {
+    color: var(--primary-color);
+}
+
+.active {
+    color: var(--primary-color);
+}
+
 .user {
     margin-bottom: 46px;
 
@@ -60,4 +68,9 @@
     font-weight: 400;
     line-height: normal;
     color: #9EA1B1;
+}
+
+.content {
+    padding: 40px 60px;
+    width: 100%   ;
 }
