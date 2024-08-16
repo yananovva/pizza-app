@@ -18,12 +18,14 @@ export function Layout() {
                         [styles.active]: isActive
                     })}>
                         <img src="/icon-menu-1.svg" alt="Иконка меню"/>
-                        Меню</NavLink>
-                    <NavLink to='/cart' {({isActive}) => cn(styles['link'], {
+                        Меню
+                    </NavLink>
+                    <NavLink to='/cart' className={({isActive}) => cn(styles['link'], {
                         [styles.active]: isActive
                     })}>
                         <img src="/icon-menu-2.svg" alt="Иконка корзины"/>
-                        Корзина</NavLink>
+                        Корзина
+                    </NavLink>
                 </div>
                 <Button className={styles['exit']}>
                     <img src="/exit-icon.svg" alt="Иконка выхода"/>
@@ -33,6 +35,7 @@ export function Layout() {
             <div className={styles['content']}>
                 <Outlet/>
             </div>
-        </div>;
+        </div>
+        ;
     </>
 }
